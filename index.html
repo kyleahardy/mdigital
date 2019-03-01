@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="javascript" type="text/javascript" href="js/navscroll.js">
+</head>
+<body>
+
+    <!----navigation header / sticky navbar---->
+    
+    <div class="header-nav" id="navbar">
+        <a href="#home"><img id="logo" src="img/MD.png"></a>
+        <nav>
+            <a id="join" href="index.html">Create Account</a>
+            <a id="login" href="#">Login</a>
+            <div id="navbar-right">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <script src="js/navscroll.js"></script>
+    <!------- Main content section ----->
+    <div class="container padding background">
+    <div class="spacer"></div>
+        <h1>Marketing, scoring, and duplication</h1>
+        <br>
+        <br>
+        <p>Music Digital strives to make events marketing, transcription, and online storage reliable, fast, and easy.</p>
+        <br>
+        <br>
+
+        <!------ Project submission form ------>
+        <div class="project-form">
+            <form action="/action_page.php" method="GET">
+                <br>
+                <input type="text" name="project" value=" > Let's get started" width="200px;">
+                <br>
+                <br>
+                <button id="Submit" type="button" name="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!------ Service section below Main content ------>
+        <div class="container">
+            <div id="services" class="our-services">
+                <div class="service marketing">
+                    <div class="spacer"></div>
+                    <div class="flex">
+                        <h3>TARGET MARKETING</h3>
+                    </div>
+                    <div class="flex">
+                        <h2>Print and online marketing</h2>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+                <div class="service digital">
+                    <div class="spacer"></div>
+                    <div class="flex">
+                        <h3>TRANSCRIPTION SERVICES</h3>
+                    </div>
+                    <div class="flex">
+                        <h2>Complete control over your library</h2>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+                <div class="service storage">
+                    <div class="spacer"></div>
+                    <div class="flex">
+                        <h3>DOCUMENT MANAGEMENT</h3>
+                    </div>
+                    <div class="flex">
+                        <h2>Store and retrieve scores 24/7</h2>
+                    </div>
+                    <div class="spacer"></div>
+                </div>        
+            </div>
+        </div>
+
+    <!------- Contact Form -------->
+    <div class="container padding">
+        <div>   
+            <h2 id="contact">CONTACT</h2>
+        </div>
+        <div class="contact-form">
+            <form action="/action_page.php" method="GET">
+                <br>
+                <input type="text" name="first name" value="First Name" width="200">
+                <br>
+                <br>
+                <input type="text" name="last name" value="Last Name" width="200">
+                <br>
+                <br>
+                <input type="email" name="email" value="Email" width="200">
+                <br>
+                <br>
+                <textarea type="message" row="10" cols="30"> > Describe your project</textarea>
+                <br>
+                <br>
+                <button id="Submit" type="button" onclick="alert('Thank you for your submission')" name="submit">Submit</button>
+            </form>
+
+            <!------ Email submit script: see main.js file ------>
+            <script src="js/main.js"></script>
+        </div>
+    </div>
+</body>
+</html>

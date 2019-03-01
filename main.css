@@ -1,0 +1,344 @@
+@import url("extensions/_extensions.scss");
+@import url("variables/_variables.scss");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+body h1, body h2, body h4 {
+  color: #DAA45C;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+body div.container div.project-form input, body div.container div.project-form button, body div.contact-form input, body div.contact-form textarea, body div.contact-form button {
+  outline-color: none;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #666666;
+  font-family: "Nunito sans", sans-serif;
+  padding: 10px 10px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.5s, border-color 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body div#navbar a#join, body div#navbar a#login, body div.container div.project-form button, body div.contact-form button {
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: background-color 0.5s, border-color 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body div#navbar a#join, body div.container div.project-form button, body div.contact-form button {
+  border: 1px solid #e80a89;
+  background-color: #e80a89;
+}
+
+body div#navbar a#login {
+  background-color: #3e4bff;
+  border-color: #3e4bff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* :focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Nunito sans", sans-serif;
+  background-color: black;
+  color: white;
+  /* Sticky nav bar */
+}
+
+body div#navbar {
+  position: fixed;
+  overflow: hidden;
+  opacity: 1.0;
+  top: 0;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 100;
+  width: 100%;
+  background-color: black;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body div#navbar img#logo {
+  padding: 20px 10px;
+  height: 200px;
+  width: 265px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body div#navbar img#logo a {
+  text-decoration: none;
+}
+
+body div#navbar a#join:hover {
+  background-color: #ee67b3;
+  border-color: #ee67b3;
+}
+
+body div#navbar a#login:hover {
+  background-color: #747dfd;
+  border-color: #747dfd;
+}
+
+body div#navbar div#navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body div#navbar div#navbar-right a {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #d6cfcf;
+  font-weight: normal;
+}
+
+body div#navbar div#navbar-right a:hover {
+  text-decoration: underline;
+}
+
+body div.container {
+  width: 100%;
+  text-align: center;
+}
+
+body div.container h1 {
+  font-family: "Righteous", cursive;
+  font-size: 48px;
+  color: #747dfd;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+body div.container p {
+  font-family: "Nunito sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ee67b3;
+  letter-spacing: 2px;
+}
+
+body div.container div.project-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div.container div.project-form form {
+  margin: 3em 0em 0em 0em;
+  text-align: left;
+  font-family: "Nunito sans", sans-serif;
+}
+
+body div.container div.project-form input {
+  font-size: 20px;
+  width: 800px;
+  height: 60px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+body div.container div.project-form input:hover {
+  background-color: rgba(66, 66, 66, 0.507);
+}
+
+body div.container div.project-form button {
+  font-size: 16px;
+  margin: 0px 0px;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 60px;
+  -webkit-transition: background-color 0.5s, border-color 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body div.container div.project-form button:hover {
+  background-color: #ee67b3;
+  border-color: #ee67b3;
+}
+
+body div.container div.our-services {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body div.container div.our-services div.service {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  opacity: 1.0;
+  width: 33.3333%;
+  height: 500px;
+  -webkit-transition: position 0.5s, opacity, 0.5s;
+  transition: position 0.5s, opacity, 0.5s;
+}
+
+body div.container div.our-services div.service:hover {
+  opacity: 0.7;
+}
+
+body div.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div.contact-form form {
+  margin: 3em 0px;
+  text-align: left;
+  font-family: "Nunito sans", sans-serif;
+}
+
+body div.contact-form input {
+  height: 40px;
+  font-size: 14px;
+}
+
+body div.contact-form input:hover {
+  background-color: rgba(66, 66, 66, 0.507);
+}
+
+body div.contact-form textarea {
+  height: 200px;
+  font-size: 14px;
+}
+
+body div.contact-form textarea:hover {
+  background-color: rgba(66, 66, 66, 0.507);
+}
+
+body div.contact-form button {
+  display: block;
+  margin: 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 100px;
+  height: 40px;
+}
+
+body div.contact-form button:hover {
+  background-color: #3e4bff;
+  border-color: #3e4bff;
+}
+
+body h1, body h2, body h4 {
+  font-family: "Nunito sans", sans-serif;
+}
+
+body h3 {
+  color: #8e95ff;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+body .padding {
+  padding: 10em 0px;
+}
+
+body .background {
+  background-image: url(/img/scores.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .flex {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px 30px;
+}
+
+body .spacer {
+  height: 120px;
+  margin: 30px 0px;
+}
+
+body .marketing {
+  background-image: url(/img/marketing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .digital {
+  background-image: url(/img/transcribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .storage {
+  background-image: url(/img/server.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
