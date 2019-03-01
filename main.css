@@ -203,8 +203,8 @@ body div.container div.project-form button {
   letter-spacing: 1px;
   width: 150px;
   height: 60px;
-  -webkit-transition: background-color 0.5s, border-color 0.5s;
-  transition: background-color 0.5s, border-color 0.5s;
+  -webkit-transition: background-color 0.5s, border-color 0.3s;
+  transition: background-color 0.5s, border-color 0.3s;
 }
 
 body div.container div.project-form button:hover {
@@ -227,15 +227,23 @@ body div.container div.our-services {
 body div.container div.our-services div.service {
   margin: 0px 0px;
   padding: 0px 0px;
-  opacity: 1.0;
+  opacity: 0.7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   width: 33.3333%;
   height: 500px;
-  -webkit-transition: position 0.5s, opacity, 0.5s;
-  transition: position 0.5s, opacity, 0.5s;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 body div.container div.our-services div.service:hover {
-  opacity: 0.7;
+  opacity: 1.0;
+  border: 0.2rem solid #ee67b3;
+  -webkit-box-shadow: 0 0 1rem #ee67b3;
+          box-shadow: 0 0 1rem #ee67b3;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 1;
 }
 
 body div.contact-form {
